@@ -13,6 +13,7 @@ export const MEMORIES: MemoryImage[] = [
   { id: '6', url: 'https://picsum.photos/300/300?random=6', caption: 'Holiday Party' },
   { id: '7', url: 'https://picsum.photos/450/300?random=7', caption: 'Debugging Late Night' },
   { id: '8', url: 'https://picsum.photos/300/450?random=8', caption: 'Launch Day' },
+  { id: '9', url: './memes/1.png', caption: 'Manifesting GPUs' },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
