@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MemoryImage } from '../types';
 
 interface MemoryWallProps {
   images: MemoryImage[];
 }
 
+
 const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
   // We duplicate the array exactly once. 
   // The CSS animation translates -50% (the width of one full set).
   // This creates a seamless loop where the second set replaces the first instantly.
   const rowItems = [...images, ...images];
+
+  const [zoomedImage, setZoomedImage] = useState<MemoryImage | null>(null);
+
+  const handleImageClick = (img: MemoryImage) => {
+    setZoomedImage(img);
+  };
+
+  const handleClose = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    // Only close if background (not image/caption) is clicked
+    if (e.target === e.currentTarget) {
+      setZoomedImage(null);
+    }
+  };
 
   return (
     <section className="py-24 bg-slate-950 relative overflow-hidden">
@@ -32,6 +46,7 @@ const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
               <div 
                 key={`${img.id}-top-${idx}`} 
                 className="relative w-[300px] h-[200px] md:w-[400px] md:h-[280px] flex-shrink-0 rounded-xl overflow-hidden border border-slate-800 bg-slate-900 transition-transform duration-300 hover:scale-105 cursor-pointer"
+                onClick={() => handleImageClick(img)}
               >
                 <img 
                   src={img.url} 
@@ -53,6 +68,7 @@ const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
               <div 
                 key={`${img.id}-btm-${idx}`} 
                 className="relative w-[300px] h-[200px] md:w-[400px] md:h-[280px] flex-shrink-0 rounded-xl overflow-hidden border border-slate-800 bg-slate-900 transition-transform duration-300 hover:scale-105 cursor-pointer"
+                onClick={() => handleImageClick(img)}
               >
                 <img 
                   src={img.url} 
@@ -67,6 +83,33 @@ const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
           </div>
         </div>
       </div>
+
+      {/* Zoomed Image Popup */}
+      {zoomedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm cursor-zoom-out"
+          onClick={handleClose}
+        >
+          <div className="max-w-[90vw] max-h-[80vh] flex flex-col items-center" style={{ pointerEvents: 'auto' }}>
+            <img
+              src={zoomedImage.url}
+              alt={zoomedImage.caption}
+              className="rounded-xl shadow-2xl max-h-[60vh] max-w-full object-contain border-4 border-white"
+              style={{ background: '#222' }}
+            />
+            <div className="mt-4 px-4 py-2 bg-black/70 rounded text-white text-lg text-center max-w-xl">
+              {zoomedImage.caption}
+            </div>
+            <button
+              className="mt-4 px-4 py-2 bg-white/80 hover:bg-white text-slate-900 rounded shadow text-base font-semibold"
+              onClick={() => setZoomedImage(null)}
+              type="button"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
