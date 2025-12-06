@@ -23,11 +23,11 @@ export const MEMORIES: MemoryImage[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
-    name: "Alex Chen",
-    role: "Frontend Engineer",
-    message: "You taught me that 'it works on my machine' is not a valid defense. Thank you for making me a better engineer and a better thinker.",
+    name: "Vikas Kapur",
+    role: "10x Engineer",
+    message: "It's been amazing working with you! From the DevBOT project hustle to our discussions, celebrations, lunches, and hangouts, so many great memories. Wishing you all the very best ahead, and don't forget us!",
     rating: 5,
-    tags: ["Mentorship", "Patience"]
+    tags: ["Collaboration", "Mentorship"]
   },
   {
     id: 't2',
