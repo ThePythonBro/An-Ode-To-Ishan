@@ -1,19 +1,23 @@
 import { Testimonial, MemoryImage, StatItem } from './types';
 import { Coffee, Bug, Lightbulb, Heart } from 'lucide-react';
 
-export const APP_TITLE = "Thank You, Sarah";
-export const APP_SUBTITLE = "For the guidance, the patience, and the code reviews.";
+export const APP_TITLE = "Thank You, Ishan!";
+export const APP_SUBTITLE = "For the guidance, the mentorship, and the unforgettable memories!.";
 
 export const MEMORIES: MemoryImage[] = [
-  { id: '1', url: 'https://picsum.photos/400/300?random=1', caption: 'First Team Outing' },
-  { id: '2', url: 'https://picsum.photos/300/400?random=2', caption: 'Hackathon 2023' },
-  { id: '3', url: 'https://picsum.photos/400/400?random=3', caption: 'The "It Works" Moment' },
-  { id: '4', url: 'https://picsum.photos/350/300?random=4', caption: 'Coffee Breaks' },
-  { id: '5', url: 'https://picsum.photos/400/350?random=5', caption: 'Whiteboard Sessions' },
-  { id: '6', url: 'https://picsum.photos/300/300?random=6', caption: 'Holiday Party' },
-  { id: '7', url: 'https://picsum.photos/450/300?random=7', caption: 'Debugging Late Night' },
-  { id: '8', url: 'https://picsum.photos/300/450?random=8', caption: 'Launch Day' },
+  // { id: '1', url: 'https://picsum.photos/400/300?random=1', caption: 'First Team Outing' },
+  { id: '1', url: './memes/sbi.jpg', caption: 'From gossips, to friendly roasts, these lunches were truly something else!' },
+  { id: '2', url: './memes/satya.jpg', caption: 'Bichara 𝚂̶𝚊̶𝚝̶𝚢̶𝚊̶ Surya' },
+  { id: '3', url: './memes/malkist-lovers.jpg', caption: 'Ab Malkist kon layega 😭' },
+  { id: '4', url: './memes/bills-go-brr.jpg', caption: 'Hehe' },
+  { id: '5', url: './memes/when-i-see-you-again.jpg', caption: 'Hey Bixby, play "See you again" by Wiz Khalifa' },
+  { id: '6', url: './memes/the-struggle-is-real.jpg', caption: 'The struggle was real 🤣' },
+  { id: '7', url: './memes/seriously.jpg', caption: 'I though of adding a count of how many times this was said, by it overflowed 🫠' },
+  { id: '8', url: './memes/mcp.jpg', caption: 'You know what we are talking about here 👀' },
   { id: '9', url: './memes/1.png', caption: 'Manifesting GPUs' },
+  { id: '10', url: './memes/internet-woes.jpg', caption: 'Manoj be like: "Kiske saath fas gaya"' },
+  { id: '11', url: './memes/chalaak.jpg', caption: 'Thank you for sharing this "Chalaak" hack with us 😂' },
+  { id: '12', url: './memes/spider-kids.jpg', caption: 'These kids will surely miss you 🥲' },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
