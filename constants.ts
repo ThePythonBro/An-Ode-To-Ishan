@@ -1,5 +1,5 @@
 import { Testimonial, MemoryImage, StatItem } from './types';
-import { Coffee, Bug, Lightbulb, Heart } from 'lucide-react';
+import { Coffee, Bug, Lightbulb, Heart, Microscope } from 'lucide-react';
 
 export const APP_TITLE = "Thank You, Ishan!";
 export const APP_SUBTITLE = "For the guidance, the mentorship, and the unforgettable memories!.";
@@ -17,7 +17,7 @@ export const MEMORIES: MemoryImage[] = [
   { id: '9', url: './memes/1.png', caption: 'Manifesting GPUs' },
   { id: '10', url: './memes/internet-woes.jpg', caption: 'Manoj be like: "Kiske saath fas gaya"' },
   { id: '11', url: './memes/chalaak.jpg', caption: 'Thank you for sharing this "Chalaak" hack with us 😂' },
-  { id: '12', url: './memes/spider-kids.jpg', caption: 'These kids will surely miss you 🥲' },
+  { id: '12', url: './memes/spider-kids.jpeg', caption: 'These kids will surely miss you 🥲' },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -64,9 +64,9 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const STATS: StatItem[] = [
-  { label: "Years Guided", value: "4+", icon: Lightbulb, color: "text-yellow-400" },
-  { label: "Bugs Squashed", value: "1,240", icon: Bug, color: "text-red-400" },
-  { label: "Coffees Consumed", value: "∞", icon: Coffee, color: "text-amber-700" },
+  { label: "Papers published", value: "3+", icon: Microscope, color: "text-yellow-400" },
+  { label: "Brainstorming sessions", value: "100+", icon: Lightbulb, color: "text-red-400" },
+  { label: "Teas Consumed", value: "∞", icon: Coffee, color: "text-amber-700" },
   { label: "Lives Touched", value: "All of us", icon: Heart, color: "text-pink-500" },
 ];
 
