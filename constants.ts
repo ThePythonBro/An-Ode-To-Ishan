@@ -7,7 +7,7 @@ export const APP_SUBTITLE = "For the guidance, the mentorship, and the unforgett
 export const MEMORIES: MemoryImage[] = [
   // { id: '1', url: 'https://picsum.photos/400/300?random=1', caption: 'First Team Outing' },
   { id: '1', url: './memes/sbi.jpg', caption: 'From gossips, to friendly roasts, these lunches were truly something else!' },
-  { id: '2', url: './memes/satya.jpg', caption: 'Bichara 𝚂̶𝚊̶𝚝̶𝚢̶𝚊̶ Surya' },
+  { id: '2', url: './memes/satya.jpg', caption: 'Bichara Surya' },
   { id: '3', url: './memes/malkist-lovers.jpg', caption: 'Ab Malkist kon layega 😭' },
   { id: '4', url: './memes/bills-go-brr.jpg', caption: 'Hehe' },
   { id: '5', url: './memes/when-i-see-you-again.jpg', caption: 'Hey Bixby, play "See you again" by Wiz Khalifa' },
@@ -24,7 +24,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
     name: "Vikas Kapur",
-    role: "10x Engineer",
+    role: "DevBOT Team",
     message: "It's been amazing working with you! From the DevBOT project hustle to our discussions, celebrations, lunches, and hangouts, so many great memories. Wishing you all the very best ahead, and don't forget us!",
     rating: 5,
     tags: ["Collaboration", "Mentorship"]
