@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { MemoryImage } from '../types';
 
 interface MemoryWallProps {
@@ -7,10 +7,39 @@ interface MemoryWallProps {
 
 
 const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
-  // We duplicate the array exactly once. 
-  // The CSS animation translates -50% (the width of one full set).
-  // This creates a seamless loop where the second set replaces the first instantly.
-  const rowItems = [...images, ...images];
+  // Create two differently shuffled orders (memoized so they stay stable across renders).
+  // Each row duplicates its own ordering to provide a seamless scrolling loop.
+  const shuffleArray = (arr: MemoryImage[]) => {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
+
+  const [rowOrderTop, rowOrderBottom] = useMemo(() => {
+    if (!images || images.length === 0) return [[], []] as MemoryImage[][];
+
+    const first = shuffleArray(images);
+    let second = shuffleArray(images);
+
+    // Try a few times to get a different ordering; fall back to reversing if unlucky.
+    let attempts = 0;
+    const idsEqual = (a: MemoryImage[], b: MemoryImage[]) => a.map(i => i.id).join(',') === b.map(i => i.id).join(',');
+    while (idsEqual(first, second) && attempts < 5) {
+      second = shuffleArray(images);
+      attempts++;
+    }
+    if (idsEqual(first, second) && images.length > 1) {
+      second = [...first].reverse();
+    }
+
+    return [first, second];
+  }, [images]);
+
+  const rowItemsTop = [...rowOrderTop, ...rowOrderTop];
+  const rowItemsBottom = [...rowOrderBottom, ...rowOrderBottom];
 
   const [zoomedImage, setZoomedImage] = useState<MemoryImage | null>(null);
 
@@ -42,7 +71,7 @@ const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
         {/* Row 1: Left to Right */}
         <div className="relative flex overflow-hidden group">
           <div className="flex gap-6 animate-scroll-left hover:[animation-play-state:paused]">
-            {rowItems.map((img, idx) => (
+            {rowItemsTop.map((img, idx) => (
               <div 
                 key={`${img.id}-top-${idx}`} 
                 className="relative w-[300px] h-[200px] md:w-[400px] md:h-[280px] flex-shrink-0 rounded-xl overflow-hidden border border-slate-800 bg-slate-900 transition-transform duration-300 hover:scale-105 cursor-pointer"
@@ -64,7 +93,7 @@ const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
         {/* Row 2: Right to Left */}
         <div className="relative flex overflow-hidden group">
           <div className="flex gap-6 animate-scroll-right hover:[animation-play-state:paused]">
-             {rowItems.map((img, idx) => (
+             {rowItemsBottom.map((img, idx) => (
               <div 
                 key={`${img.id}-btm-${idx}`} 
                 className="relative w-[300px] h-[200px] md:w-[400px] md:h-[280px] flex-shrink-0 rounded-xl overflow-hidden border border-slate-800 bg-slate-900 transition-transform duration-300 hover:scale-105 cursor-pointer"
