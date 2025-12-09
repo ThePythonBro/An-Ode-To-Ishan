@@ -64,10 +64,10 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const STATS: StatItem[] = [
-  { label: "Papers published", value: "3+", icon: Microscope, color: "text-yellow-400" },
+  { label: "Papers published", value: "4+", icon: Microscope, color: "text-yellow-400" },
   { label: "Brainstorming sessions", value: "100+", icon: Lightbulb, color: "text-red-400" },
   { label: "Teas Consumed", value: "∞", icon: Coffee, color: "text-amber-700" },
-  { label: "Lives Touched", value: "All of us", icon: Heart, color: "text-pink-500" },
+  { label: "Lives Touched", value: "All of our", icon: Heart, color: "text-pink-500" },
 ];
 
 export const FAREWELL_TITLE = "A Parting Wish";
