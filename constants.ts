@@ -72,9 +72,12 @@ export const STATS: StatItem[] = [
 
 export const FAREWELL_TITLE = "A Parting Wish";
 export const FAREWELL_BODY = `
-As you move on to this next exciting chapter, we want you to know just how much of a void you're leaving behind—not just in the codebase, but in the daily life of the team.
+As you move on to this next exciting chapter, we want to shed light on the legacy you're leaving behind, not just in the codebase :), but in the all of our lives.
 
-You've been a mentor, a shield against scope creep, a debugger of code and life problems, and a true friend. While we are sad to see you go, we are incredibly proud to have worked alongside you.
+You've been a mentor, an expert, a teacher, but most importantly a true friend. Every once a while in life, you come across a person who exudes an aura of curiosity so intense, that those around naturally get inspired to do something greater. Thank you for being that person!
 
-May your builds always pass, your deployments never fail, and your new team realize just how lucky they are.
+While we are sad to see you go, we are incredibly proud to have had a chance to collaborate with you.
+
+May all your training runs converge, all your p-values be significant and all your CUDA drivers work well on the first try 😝 
+Wishing you all the very best on your next adventure, Ishan!
 `;
