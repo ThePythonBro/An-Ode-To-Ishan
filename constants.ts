@@ -31,11 +31,11 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 't2',
-    name: "Jordan Smith",
-    role: "Product Manager",
-    message: "Rarely do you meet an engineer who cares about the user as much as the code. Going to miss your insights in our sprint plannings.",
+    name: "Chandra Prabhaker",
+    role: "Recommender Systems Team",
+    message: "Before you joined the team, I was often questioning my direction in my professional life. After attending just a few of your lectures, I gained a clear understanding of how I should proceed, to truly enhance my learning. Our friendship took this progress to a new level. For the last four or five years, I hadn't read a single professional paper-but now, thanks to your influence, I read at least one daily. That's the immense impact you've had on me. \nHonestly, this is the first time I'm genuinely sad about someone leaving the company. The depth of the friendship we've built in just one year makes this goodbye particularly difficult. Farewell Ishan!",
     rating: 5,
-    tags: ["Product Sense", "Leadership"]
+    tags: ["Friendship", "Inspiration"]
   },
   {
     id: 't3',
