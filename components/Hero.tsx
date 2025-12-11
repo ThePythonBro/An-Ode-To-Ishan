@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-blue-400 font-medium tracking-widest uppercase text-sm mb-4">The Farewell</h2>
+          {/* <h2 className="text-blue-400 font-medium tracking-widest uppercase text-sm mb-4">The Farewell</h2> */}
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6">
             {title}
           </h1>
