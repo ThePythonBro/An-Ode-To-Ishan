@@ -23,11 +23,11 @@ export const MEMORIES: MemoryImage[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
-    name: "Vikas Kapur",
-    role: "DevBOT Team",
-    message: "It's been amazing working with you! From the DevBOT project hustle to our discussions, celebrations, lunches, and hangouts, so many great memories. Wishing you all the very best ahead, and don't forget us!",
+    name: "Ankur Jain",
+    role: "AV Team",
+    message: "Ishan is a rare blend of generosity, creativity, humor, and ambition!",
     rating: 5,
-    tags: ["Collaboration", "Mentorship"]
+    tags: ["Curiousity", "Ambition"]
   },
   {
     id: 't2',
@@ -39,32 +39,32 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 't3',
-    name: "Priya Patel",
-    role: "Junior Dev",
-    message: "I was terrified to merge my first PR, but you sat with me for an hour explaining every line. I'll never forget that kindness.",
+    name: "Vikas Kapur",
+    role: "DevBOT Team",
+    message: "It's been amazing working with you! From the DevBOT project hustle to our discussions, celebrations, lunches, and hangouts, so many great memories. Wishing you all the very best ahead, and don't forget us!",
     rating: 5,
-    tags: ["Kindness", "Teaching"]
+    tags: ["Collaboration", "Mentorship"]
   },
   {
     id: 't4',
-    name: "Sam Wilson",
-    role: "Backend Lead",
-    message: "Your code reviews were brutal but necessary. Thanks for keeping our standards high and our latency low.",
+    name: "Sachin Kuntal",
+    role: "Computer Vision Team",
+    message: "All the best Ishan. Learned a lot from you. Thank you for everything :)",
     rating: 5,
-    tags: ["Code Quality", "Standards"]
+    tags: ["Guidance", "Knowledge"]
   },
   {
     id: 't5',
-    name: "Casey Jones",
-    role: "Designer",
-    message: "Finally, a dev who respects pixels! Thanks for pushing for that extra polish.",
+    name: "Jigyasa Gupta",
+    role: "Computer Vision Team",
+    message: "You've truly been an inspiration. You showed us what determination and questioning the system can achieve, even when things weren't always in your favour. I'll always look up to you as a mentor. Thanks for being so patient while we worked on the paper and made all those rookie mistakes 😅. Your structured way of thinking and calm approach really shaped how we tackle problems. Wishing you all the best and great success in whatever you do next. You'll be missed!",
     rating: 5,
-    tags: ["Design Eye", "Collaboration"]
+    tags: ["Mentorship", "Inspiration"]
   }
 ];
 
 export const STATS: StatItem[] = [
-  { label: "Papers published", value: "4+", icon: Microscope, color: "text-yellow-400" },
+  { label: "Papers published", value: "6+", icon: Microscope, color: "text-yellow-400" },
   { label: "Brainstorming sessions", value: "100+", icon: Lightbulb, color: "text-red-400" },
   { label: "Teas Consumed", value: "∞", icon: Coffee, color: "text-amber-700" },
   { label: "Lives Touched", value: "All of our", icon: Heart, color: "text-pink-500" },
