@@ -59,7 +59,7 @@ const MemoryWall: React.FC<MemoryWallProps> = ({ images }) => {
       <div className="container mx-auto px-6 mb-12 text-center relative z-10">
         <h2 className="font-serif text-4xl md:text-5xl text-white mb-4">Memory Lane</h2>
         <p className="text-slate-400 max-w-2xl mx-auto">
-          A gallery of bugs fixed, deadlines met, and moments shared.
+          A gallery of jokes cracked, deadlines met, and moments shared.
         </p>
       </div>
 
