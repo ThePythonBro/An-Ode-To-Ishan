@@ -60,6 +60,14 @@ export const TESTIMONIALS: Testimonial[] = [
     message: "You've truly been an inspiration. You showed us what determination and questioning the system can achieve, even when things weren't always in your favour. I'll always look up to you as a mentor. Thanks for being so patient while we worked on the paper and made all those rookie mistakes 😅. Your structured way of thinking and calm approach really shaped how we tackle problems. Wishing you all the best and great success in whatever you do next. You'll be missed!",
     rating: 5,
     tags: ["Mentorship", "Inspiration"]
+  },
+  {
+    id: 't6',
+    name: "Atul Shukla",
+    role: "ISWT",
+    message: "I really enjoyed learning and having fun with you. Our T-time moments will always be special to me. Wishing you all the best in your future assignments.",
+    rating: 5,
+    tags: ["Friendship", "Learning"]
   }
 ];
 
@@ -72,7 +80,7 @@ export const STATS: StatItem[] = [
 
 export const FAREWELL_TITLE = "A Parting Wish";
 export const FAREWELL_BODY = `
-As you move on to this next exciting chapter, we want to shed light on the legacy you're leaving behind, not just in the codebase :), but in the all of our lives.
+As you move on to this next exciting chapter, we want to shed light on the legacy you're leaving behind, not just in the codebase :), but in all of our lives.
 
 You've been a mentor, an expert, a teacher, but most importantly a true friend. Every once a while in life, you come across a person who exudes an aura of curiosity so intense, that those around naturally get inspired to do something greater. Thank you for being that person!
 
@@ -80,4 +88,5 @@ While we are sad to see you go, we are incredibly proud to have had a chance to 
 
 May all your training runs converge, all your p-values be significant and all your CUDA drivers work well on the first try 😝 
 Wishing you all the very best on your next adventure, Ishan!
+
 `;
