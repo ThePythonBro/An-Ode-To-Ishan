@@ -31,12 +31,13 @@ const FarewellNote: React.FC<FarewellNoteProps> = ({ title, body }) => {
 
            <div className="mt-12">
              <p className="text-sm text-slate-500 tracking-[0.2em] uppercase">With Gratitude,</p>
-             <p className="text-white font-serif text-2xl mt-2">Your fellow engineers</p>
+             <p className="text-white font-serif text-2xl mt-2">Your Fellow Engineers</p>
            </div>
          </motion.div>
        </div>
     </section>
   );
 };
+
 
 export default FarewellNote;
