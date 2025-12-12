@@ -68,6 +68,14 @@ export const TESTIMONIALS: Testimonial[] = [
     message: "I really enjoyed learning and having fun with you. Our T-time moments will always be special to me. Wishing you all the best in your future assignments.",
     rating: 5,
     tags: ["Friendship", "Learning"]
+  },
+  {
+    id: 't7',
+    name: "Pranjal Bharti",
+    role: "DevBOT team",
+    message: "From day one, you led with clarity and protected the team's time: you took the long meetings, filtered out the extra noise,  and kept us focused on real research and building. More than that, you made us believe we can publish strong papers even while shipping work in this org. I'll also miss the daily chats—life updates and news that made the grind lighter. Wishing you the best for what's next. You'll be missed, and you've left a real impact here.",
+    rating: 5,
+    tags: ["Mentorship", "Leadership"]
   }
 ];
 
@@ -90,3 +98,4 @@ May all your training runs converge, all your p-values be significant and all yo
 Wishing you all the very best on your next adventure, Ishan!
 
 `;
+
